@@ -26,3 +26,19 @@
     position: absolute;
     border: 1rem solid yellow;
 }
+input {
+    display: none;
+} 
+article {
+    height: 0px;
+    overflow: hidden;
+    width: auto;
+    
+}
+input:checked  ~ article {
+    height: auto;
+    /* width: 100vw; */
+}
+svg {
+    max-width: 300px; 
+}
