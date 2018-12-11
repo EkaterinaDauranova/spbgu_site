@@ -1,0 +1,28 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr; 
+    grid-gap: 14px;
+    margin: 45px;
+}
+.grid-element {
+    border: 3px solid black;
+    position: relative;
+}
+#design:hover {
+    background: pink;
+}
+#design:hover::before {
+    border-bottom-right-radius: 1.8rem;
+    background: white;
+    margin-left: -1rem;
+    content: 'кафед \A ра диз\A айна';
+    text-transform: uppercase;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    white-space: pre-wrap;
+    font-size: 3vw;
+    top: 0;
+    position: absolute;
+    border: 1rem solid yellow;
+}
